@@ -1,6 +1,3 @@
-function convert() {
-
-};
 const myInput = document.getElementById("myInput");
 const toFahrenheit = document.getElementById("toFahrenheit");
 const toCelcius = document.getElementById("toCelcius");
