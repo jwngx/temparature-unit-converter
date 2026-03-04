@@ -7,15 +7,21 @@ const toCelcius = document.getElementById("toCelcius");
 const mySubmit = document.getElementById("mySubmit");
 const result = document.getElementById("result");
 let userValue;
-function convert(){
-    if(toFahrenheit.checked){
 
+// °F = (9/5 × °C) + 32
+// °C = (°F - 32) × 5/9
+let resultValue;
+function convert() {
+    if (toFahrenheit.checked) {
+        resultValue = (userValue * 9 / 5)+32;
+        result.textContent=resultValue+"F";
     }
-    else if(toCelcius.checked){
-
+    else if (toCelcius.checked) {
+        resultValue=(userValue-32)*5/9;
+        result.textContent=resultValue+"C";
     }
-    else{
-        result.textContent="Please select a unit!";
+    else {
+        result.textContent = "Please select a unit!";
     }
 }
 mySubmit.onclick = function (e) {       //e=event
