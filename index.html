@@ -41,16 +41,21 @@
     </aside>
     <div class="outer_container">
         <div class="inner_container">
-            <header class="cardH1">
+            <header class="cardH1 capitalize">
                 <h1>temparature converter</h1>
             </header>
             <form class="card_contents">
+                <label for="myInput">Enter your temparature value to convert</label>
                 <input type="number" id="myInput" class="input_box">
-                <input type="radio" id="toFahrenheit" name="unit">
-                <label for="toFahrenheit">celcius to fahrenheit</label>
-                <input type="radio" id="toCelcius" name="unit">
-                <label for="toCelcius">fahrenheit to celcius</label>
-                <button type="submit" id="mySubmit">submit</button>
+                <div class="unit1">
+                    <input type="radio" id="toFahrenheit" name="unit">
+                    <label for="toFahrenheit">celcius to fahrenheit</label>
+                </div>
+                <div class="unit2">
+                    <input type="radio" id="toCelcius" name="unit">
+                    <label for="toCelcius">fahrenheit to celcius</label>
+                </div>
+                    <button type="submit" id="mySubmit">submit</button>
             </form>
             <div class="result_container">
                 <p id="result"></p>
