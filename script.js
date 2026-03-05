@@ -11,11 +11,11 @@ let resultValue;
 function convert() {
     if (toFahrenheit.checked) {
         resultValue = (userValue * 9 / 5)+32;
-        result.textContent=resultValue+"F";
+        result.textContent=resultValue.toFixed(1)+"F";
     }
     else if (toCelcius.checked) {
         resultValue=(userValue-32)*5/9;
-        result.textContent=resultValue+"C";
+        result.textContent=resultValue.toFixed(1)+"C";
     }
     else {
         result.textContent = "Please select a unit!";
