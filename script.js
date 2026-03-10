@@ -25,4 +25,5 @@ mySubmit.onclick = function (e) {       //e=event
     e.preventDefault();
     userValue = myInput.value;
     convert();
+    console.log(resultValue);
 }
