@@ -9,13 +9,19 @@ let userValue;
 // °C = (°F - 32) × 5/9
 let resultValue;
 function convert() {
+
+    if (userValue === "" || isNaN(userValue)) {
+        result.style.color = "red";
+        result.textContent = "Please enter a value!";
+        return;
+    }
     if (toFahrenheit.checked) {
-        resultValue = (userValue * 9 / 5)+32;
-        result.textContent=resultValue.toFixed(1)+"F";
+        resultValue = (userValue * 9 / 5) + 32;
+        result.textContent = resultValue.toFixed(1) + "F";
     }
     else if (toCelcius.checked) {
-        resultValue=(userValue-32)*5/9;
-        result.textContent=resultValue.toFixed(1)+"C";
+        resultValue = (userValue - 32) * 5 / 9;
+        result.textContent = resultValue.toFixed(1) + "C";
     }
     else {
         result.textContent = "Please select a unit!";
@@ -23,7 +29,7 @@ function convert() {
 }
 mySubmit.onclick = function (e) {       //e=event
     e.preventDefault();
-    userValue = myInput.value;
+    userValue = myInput.value.trim();
     convert();
     console.log(resultValue);
 }
