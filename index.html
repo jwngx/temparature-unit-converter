@@ -48,12 +48,17 @@
                 <label class="input_label" for="myInput">Enter your temparature value to convert</label>
                 <div class="input_submit_container">
                     <input type="number" id="myInput" class="input_box">
+                    <button class="submit_btn" id="mySubmit">Submit</button>
                 </div>
                 <div class="selection_container">
-                    <label for="toFahrenheit">celcius to fahrenhei</label>
-                    <input class="toFahrenheit" type="radio" id="toFahrenheit" name="unit">
-                    <label for="toCelcius">fahrenheit to celcius</label>
-                    <input class="toCelcius" type="radio" id="toCelcius" name="unit">
+                    <div class="selection1">
+                        <input class="toFahrenheit" type="radio" id="toFahrenheit" name="unit">
+                        <label for="toFahrenheit">Celcius to fahrenheit</label>
+                    </div>
+                    <div class="selection2">
+                        <input class="toCelcius" type="radio" id="toCelcius" name="unit">
+                        <label for="toCelcius">Fahrenheit to celcius</label>
+                    </div>
                 </div>
             </form>
             <div class="result_container">
