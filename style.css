@@ -198,7 +198,9 @@ a {
     width: 60%;
     gap: 6px;
 }
-
+.selection_container input{
+    visibility: hidden;
+}
 .selection_container label {
     font-family: var(--DmM-mono-font);
     white-space: nowrap;
