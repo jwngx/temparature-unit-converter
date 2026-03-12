@@ -11,7 +11,7 @@ let resultValue;
 function convert() {
 
     if (userValue === "" || isNaN(userValue)) {
-        result.style.color = "red";
+        // result.style.color = "red";
         result.textContent = "Please enter a value!";
         return;
     }

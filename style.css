@@ -147,9 +147,14 @@ a {
     display: flex;
     flex: 1;
     border: none;
+    background: var(--muted);
+    font-size: 1rem;
+}
+.input_box:hover{
+    border: 2px solid var(--theme);
 }
 .input_box:focus{
-    outline: 2px solid red;
+    outline: none;
 }
 .submit_btn {
     border-radius: 10px;
@@ -158,11 +163,25 @@ a {
     font-family: var(--DmM-mono-font);
     border: none;
     background: var(--theme);
+    transition: transform 0.15s;
 }
-
+.submit_btn:hover{
+    cursor: pointer;
+}
+.submit_btn:active{
+    transform: scale(0.95);
+}
+.selection_h3{
+    display: flex;
+    margin-top: 20px;
+}
+.selection_h3 h3{
+    color: var(--muted);
+    font-family: var(--DmM-mono-font);
+}
 .selection_container {
     border: 1px solid white;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 80px;
     width: 100%;
     gap: 14px;
@@ -188,6 +207,16 @@ a {
     padding: 0 10px;
     border: none;
     width: 100%;
+    transition: transform 0.55s;
+}
+.selection_container label:hover{
+    cursor: pointer;
+}
+.selection_container label:active{
+    transform: scale(0.95);
+}
+.toFahrenheit,.toCelcius{
+    cursor: pointer;
 }
 .result_container{
     border: 1px solid white;
